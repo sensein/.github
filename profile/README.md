@@ -1,7 +1,5 @@
-# The Ghosh Group
 
-Welcome to the Ghosh Group Github.
-
+Welcome to the Senseable Intelligence Group Github.
  
 #### Important Links
 
