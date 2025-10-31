@@ -1,8 +1,6 @@
-
 Welcome to the Senseable Intelligence Group Github.
  
 #### Important Links
-
 Home Website: 
 
 #### Current Roster
@@ -27,7 +25,16 @@ Home Website:
 | Jordan Wilke | wilke18@mit.edu | MEng Student, MIT | MEng in Computer Science and Engineering, MIT; B.S. in Computer Science and Engineering and Brain and Cognitive Science, MIT |
 | Bruke Wossenseged | brukew@mit.edu | MEng Student, MIT | MEng in Electrical Engineering and Computer Science, MIT; B.S. in Electrical Engineering and Computer Science, MIT |
 | Manaal Mohammed | manaal@mit.edu | MEng Student, MIT | MEng in Artificial Intelligence and Decision Making, MIT; B.S. in Artificial Intelligence and Decision Making, MIT |
+
+#### Project Roles and Responsibilities
+
+| Project | Lead Scientist/Engineer | Support Scientist/Engineer |
+|-|-|-|
+| DANDY | Kabilar Gunalan (kabi@mit.edu) | TBD |
+| Brain KB | Tek Raj Chhetri (tekraj@mit.edu) | Dorota Jarecka (djarecka@mit.edu) |
+| Brain-Behavior Synchronization | Suliman Sharif (sulstice@mit.edu) |   |
+| TBD | TBD | TBD |
+
 #### Our Lab:
 
 #### Statistics:
-
