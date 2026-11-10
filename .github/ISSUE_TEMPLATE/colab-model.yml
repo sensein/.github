@@ -1,0 +1,27 @@
+name: "Model"
+description: "Building or adapting a model; done when evaluated against a baseline, with a card."
+type: "Model"
+body:
+  - type: markdown
+    attributes:
+      value: "Never paste restricted content; link to it. Add typed links in a fenced links block, one per line, e.g. uses: sensein/senselab#12."
+  - type: textarea
+    id: task
+    attributes:
+      label: "Task and data"
+    validations:
+      required: true
+  - type: textarea
+    id: baseline
+    attributes:
+      label: "Baseline and evaluation set"
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: "Links"
+      description: "One per line: <edge>: <owner>/<repo>#<n> or <edge>: kg:<id>"
+      render: links
+    validations:
+      required: false

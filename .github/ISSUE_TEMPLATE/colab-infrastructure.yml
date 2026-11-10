@@ -1,0 +1,27 @@
+name: "Infrastructure"
+description: "Containers, launchers, runbooks; done when a second person verifies the runbook."
+type: "Infrastructure"
+body:
+  - type: markdown
+    attributes:
+      value: "Never paste restricted content; link to it. Add typed links in a fenced links block, one per line, e.g. uses: sensein/senselab#12."
+  - type: textarea
+    id: need
+    attributes:
+      label: "What it enables"
+    validations:
+      required: true
+  - type: input
+    id: runbook
+    attributes:
+      label: "Runbook location"
+    validations:
+      required: false
+  - type: textarea
+    id: links
+    attributes:
+      label: "Links"
+      description: "One per line: <edge>: <owner>/<repo>#<n> or <edge>: kg:<id>"
+      render: links
+    validations:
+      required: false

@@ -1,0 +1,21 @@
+name: "Task"
+description: "A unit of work under any item."
+type: "Task"
+body:
+  - type: markdown
+    attributes:
+      value: "Never paste restricted content; link to it. Add typed links in a fenced links block, one per line, e.g. uses: sensein/senselab#12."
+  - type: textarea
+    id: work
+    attributes:
+      label: "What needs doing"
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: "Links"
+      description: "One per line: <edge>: <owner>/<repo>#<n> or <edge>: kg:<id>"
+      render: links
+    validations:
+      required: false
