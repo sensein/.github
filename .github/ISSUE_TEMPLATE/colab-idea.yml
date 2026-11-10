@@ -1,0 +1,27 @@
+name: "Idea"
+description: "A possibility worth triaging: promote, park, or drop."
+type: "Idea"
+body:
+  - type: markdown
+    attributes:
+      value: "Never paste restricted content; link to it. Add typed links in a fenced links block, one per line, e.g. uses: sensein/senselab#12."
+  - type: textarea
+    id: idea
+    attributes:
+      label: "The idea"
+    validations:
+      required: true
+  - type: input
+    id: origin
+    attributes:
+      label: "Where it came from (discussion, paper, finding)"
+    validations:
+      required: false
+  - type: textarea
+    id: links
+    attributes:
+      label: "Links"
+      description: "One per line: <edge>: <owner>/<repo>#<n> or <edge>: kg:<id>"
+      render: links
+    validations:
+      required: false

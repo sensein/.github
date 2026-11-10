@@ -1,0 +1,27 @@
+name: "Output"
+description: "A paper, preprint, talk, or grant section."
+type: "Output"
+body:
+  - type: markdown
+    attributes:
+      value: "Never paste restricted content; link to it. Add typed links in a fenced links block, one per line, e.g. uses: sensein/senselab#12."
+  - type: input
+    id: venue
+    attributes:
+      label: "Venue and deadline"
+    validations:
+      required: true
+  - type: textarea
+    id: contributors
+    attributes:
+      label: "Contributors and proposed CRediT roles"
+    validations:
+      required: false
+  - type: textarea
+    id: links
+    attributes:
+      label: "Links"
+      description: "One per line: <edge>: <owner>/<repo>#<n> or <edge>: kg:<id>"
+      render: links
+    validations:
+      required: false

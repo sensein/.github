@@ -1,0 +1,39 @@
+name: "Experiment"
+description: "Tests a hypothesis; records results with provenance, negative ones too."
+type: "Experiment"
+body:
+  - type: markdown
+    attributes:
+      value: "Never paste restricted content; link to it. Add typed links in a fenced links block, one per line, e.g. uses: sensein/senselab#12."
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: "Hypothesis"
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: "Data (pointers only, never restricted content)"
+    validations:
+      required: true
+  - type: textarea
+    id: metrics
+    attributes:
+      label: "Metrics, including imbalance-aware ones"
+    validations:
+      required: true
+  - type: input
+    id: compute
+    attributes:
+      label: "Compute plan (partition, GPUs, budget)"
+    validations:
+      required: false
+  - type: textarea
+    id: links
+    attributes:
+      label: "Links"
+      description: "One per line: <edge>: <owner>/<repo>#<n> or <edge>: kg:<id>"
+      render: links
+    validations:
+      required: false

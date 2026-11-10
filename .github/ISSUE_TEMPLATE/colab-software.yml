@@ -1,0 +1,27 @@
+name: "Software"
+description: "A software change or project; done when released and documented."
+type: "Software"
+body:
+  - type: markdown
+    attributes:
+      value: "Never paste restricted content; link to it. Add typed links in a fenced links block, one per line, e.g. uses: sensein/senselab#12."
+  - type: textarea
+    id: goal
+    attributes:
+      label: "What it should do"
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: "Owning repo"
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: "Links"
+      description: "One per line: <edge>: <owner>/<repo>#<n> or <edge>: kg:<id>"
+      render: links
+    validations:
+      required: false
