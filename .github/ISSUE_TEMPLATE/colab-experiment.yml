@@ -29,6 +29,18 @@ body:
       label: "Compute plan (partition, GPUs, budget)"
     validations:
       required: false
+  - type: input
+    id: budget
+    attributes:
+      label: "Run budget (iterations=N, wall=2h, loop=30m, compute=GPU-hours, metric=name, direction=higher|lower)"
+    validations:
+      required: false
+  - type: input
+    id: verify
+    attributes:
+      label: "Verify command (its last stdout line is the metric)"
+    validations:
+      required: false
   - type: textarea
     id: links
     attributes:
